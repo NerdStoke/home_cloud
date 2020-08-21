@@ -26,10 +26,13 @@ If you have an HDMI cord, a monitor, and keyboard, you can simply connect those 
 4. After a few minutes, run the command `arp -a` again. The new IP is your Pi's IP.
 
 
+## Configuring the Raspberry Pi
 
-##Configuring the Raspberry Pi
+On the Raspberry Pi, the default login is the user `pi` with password `raspberry`.
 
-On the Raspberry Pi, run the following commands:
+Once logged in, this can be changed with the command `sudo passwd`
+
+Next, run the following commands:
 
 - `sudo apt update`  
 
@@ -40,3 +43,12 @@ On the Raspberry Pi, run the following commands:
 - `wget -O - https://raw.githubusercontent.com/NerdStoke/home_cloud/master/install.sh | sudo bash`  
     - This will also take a while. The Raspberry Pi should automatically reboot when done. If it does not, then run `sudo reboot`
     - The previous command is the version that we used, but the script behind it is not maintained. If it ran successfully, then skip the rest of this item. For the official script maintained by OpenMediaVault, run this command: `wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash`
+
+
+## Configuring Open Media Vault
+
+Once the Pi has rebooted, you should new be able to visit the IP address of the Pi in a browser by going to `http://[RASPBERRYPIIPADDRESS]`
+
+The default username is `admin` and default password is `openmediavault`
+
+You can change the password under **General Settings**
