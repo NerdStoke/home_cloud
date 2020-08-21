@@ -3,8 +3,7 @@ Instructions and scripts for setting up a home NAS with hard drives and Raspberr
 
 ## Introduction
 
-
-- For instructions in greater detail, we have copied the exact version that we used for this project at [this link](https://github.com/NerdStoke/home_cloud/blob/master/Adden-B-Installing_OMV5_on_an%20R-PI.pdf). However, this documentation may be outdated and the official copy is maintained by [OpenMediaVault](https://github.com/OpenMediaVault-Plugin-Developers/docs/blob/master/Adden-B-Installing_OMV5_on_an%20R-PI.pdf)
+- For instructions in greater detail, we have copied the instructions for the exact version that we used for this project at [this link](https://github.com/NerdStoke/home_cloud/blob/master/Adden-B-Installing_OMV5_on_an%20R-PI.pdf). However, this documentation may be outdated and the official copy is maintained by [OpenMediaVault](https://github.com/OpenMediaVault-Plugin-Developers/docs/blob/master/Adden-B-Installing_OMV5_on_an%20R-PI.pdf)
 
 ## Creating the Raspberry Pi SD Card
 
@@ -16,13 +15,13 @@ Instructions and scripts for setting up a home NAS with hard drives and Raspberr
 
 Run the following commands:
 
-`sudo apt update`  
+- `sudo apt update`  
 
-`sudo apt upgrade`  
-- The two previous commands will take a while to finish
+- `sudo apt upgrade`  
+-- The two previous commands will take a while to finish
 
 
-`https://raw.githubusercontent.com/NerdStoke/home_cloud/master/install.sh | sudo bash`  
-- This will also take a while. The Raspberry Pi will automatically reboot when done.
-- The previous command is the version that we used, but the script behind it is not maintained. If it ran successfully, then ship the rest of this item. For the official script maintained by OpenMediaVault, run this command: `https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash`
+- `wget -O - https://raw.githubusercontent.com/NerdStoke/home_cloud/master/install.sh | sudo bash`  
+-- This will also take a while. The Raspberry Pi should automatically reboot when done. If it does not, then run `sudo reboot`
+-- The previous command is the version that we used, but the script behind it is not maintained. If it ran successfully, then skip the rest of this item. For the official script maintained by OpenMediaVault, run this command: `wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash`
 
