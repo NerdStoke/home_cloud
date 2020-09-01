@@ -1,5 +1,6 @@
 # Home Cloud
 Instructions and scripts for setting up a home NAS with hard drives and Raspberry Pi
+These instruciton follow a [NerdStoke YouTube Tutorial](https://www.youtube.com/watch?v=FysrgJ44Dk4)
 
 
 ## Introduction
@@ -35,7 +36,7 @@ Run the following commands:
 - `sudo apt upgrade`  
     - This command will take a while to finish.
 
-- Now, we need to reboot with `sudo reboot`.
+- Now, we need to reboot with `sudo reboot`git st.
 
 
 - `wget -O - https://raw.githubusercontent.com/NerdStoke/home_cloud/master/install.sh | sudo bash`  
@@ -50,3 +51,7 @@ Once the Pi has rebooted, you should new be able to visit the IP address of the 
 The default username is `admin` and default password is `openmediavault`.
 
 You can change the password under **General Settings**.
+
+## Further Setup
+
+Can be found on the [Youtube Video](youtu.be/FysrgJ44Dk4)!
